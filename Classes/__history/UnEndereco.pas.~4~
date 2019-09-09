@@ -1,0 +1,27 @@
+unit UnEndereco;
+
+interface
+  type Endereco = class
+    private
+      FCep : string[7];
+      FLogradouro : string[60];
+      FNumero : integer;
+      FComplemento : string[60];
+      FBairro : string[50];
+      FCidade : string[60];
+      FEstado : string[2];
+      FPais : string[2];
+    public
+      property Cep : string[7] read FCep write FCep;
+      property Logradouro : string[60]  read FCep write FCep;
+      property Numero : integer  read FNumero write FNumero;
+      property Complemento : string[60] read FComplemento write FCOmplemento;
+      property Bairro : string[50] read FBairro write FBairro;
+      property Cidade : string[60] read FCidade write FCidade;
+      property Estado : string[2] read FEstado write FEstado;
+      property Pais : string[2] read FPais write FPais;
+  end;
+
+implementation
+
+end.

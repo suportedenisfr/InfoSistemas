@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/09/04 15:20:27.000.172,=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019/09/04 15:40:26.000.219,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\UnFrmCrud.pas</Transaction>
+    <Transaction>2019/09/04 15:40:26.000.219,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\UnFrmCrud.dfm</Transaction>
+    <Transaction>2019/09/04 15:40:45.000.702,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\InfoSistemas.dproj</Transaction>
+    <Transaction>2019/09/04 15:41:48.000.516,=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas</Transaction>
+    <Transaction>2019/09/04 15:42:58.000.119,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Interfaces\unIntPessoa.pas</Transaction>
+    <Transaction>2019/09/04 15:43:13.000.697,=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas</Transaction>
+    <Transaction>2019/09/04 15:43:32.000.825,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Interfaces\UnIntfEndereco.pas</Transaction>
+    <Transaction>2019/09/04 15:43:42.000.288,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Interfaces\unIntPessoa.pas=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Interfaces\unIntfPessoa.pas</Transaction>
+    <Transaction>2019/09/04 15:46:04.000.273,=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas</Transaction>
+    <Transaction>2019/09/04 15:46:20.000.538,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Classes\UnPessoa.pas</Transaction>
+    <Transaction>2019/09/04 15:46:26.000.308,=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas</Transaction>
+    <Transaction>2019/09/04 15:46:48.000.591,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Classes\UnEndereco.pas</Transaction>
+    <Transaction>2019/09/04 15:57:24.000.758,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Interfaces\UnIntfEndereco.pas=</Transaction>
+    <Transaction>2019/09/04 15:57:34.000.023,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Interfaces\unIntfPessoa.pas=</Transaction>
+    <Transaction>2019/09/06 08:19:32.000.894,=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas</Transaction>
+    <Transaction>2019/09/06 08:20:20.000.181,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\UnEmail.pas</Transaction>
+    <Transaction>2019/09/09 08:15:48.403,=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas</Transaction>
+    <Transaction>2019/09/09 08:16:28.284,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Lib\UnXML.pas=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas</Transaction>
+    <Transaction>2019/09/09 10:42:08.288,=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas</Transaction>
+    <Transaction>2019/09/09 10:42:51.860,C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Lib\UnAPIviacep.pas=C:\Users\Denis\Documents\Embarcadero\Studio\Projects\InfoSistemas\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

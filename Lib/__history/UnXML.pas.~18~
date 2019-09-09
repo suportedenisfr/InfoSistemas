@@ -1,0 +1,46 @@
+unit UnXML;
+
+
+Interface
+
+uses
+  System.Classes,
+  System.TypInfo, Xml.XMLDoc, System.Generics.Collections, UnEndereco, UnPessoa;
+
+  type
+    TMeuXML = class
+    public
+      procedure WriteToXML(prPessoa : TPessoa);
+  end;
+
+implementation
+
+uses
+  System.SysUtils, Vcl.Forms;
+
+
+procedure TMeuXML.WriteToXML(prPessoa : TPessoa);
+var
+  XMLEnvio: TXMLDocument;
+begin
+  XMLEnvio := TXMLDocument.Create(nil);
+  XMLEnvio.Active := True;
+  XMLEnvio.AddChild('Pessoa').AddChild('Nome').NodeValue := prPessoa.Nome;
+  XMLEnvio.DocumentElement.ChildNodes['Pessoa'].AddChild('Identidade').NodeValue := prPessoa.Identidade;
+  XMLEnvio.DocumentElement.ChildNodes['Pessoa'].AddChild('CPF').NodeValue := prPessoa.CPF;
+  XMLEnvio.DocumentElement.ChildNodes['Pessoa'].AddChild('Telefone').NodeValue := prPessoa.Telefone;
+  XMLEnvio.DocumentElement.ChildNodes['Pessoa'].AddChild('Email').NodeValue := prPessoa.Email;
+
+  XMLEnvio.DocumentElement.AddChild('Endereco');
+  XMLEnvio.DocumentElement.ChildNodes['Endereco'].AddChild('Cep').NodeValue := prPessoa.Endereco.Cep;
+  XMLEnvio.DocumentElement.ChildNodes['Endereco'].AddChild('Logradouro').NodeValue := prPessoa.Endereco.Logradouro;
+  XMLEnvio.DocumentElement.ChildNodes['Endreco'].AddChild('Numero').NodeValue := prPessoa.Endereco.Numero;
+  XMLEnvio.DocumentElement.ChildNodes['Endereco'].AddChild('Complemento').NodeValue := prPessoa.Endereco.Complemento;
+  XMLEnvio.DocumentElement.ChildNodes['Endereco'].AddChild('Bairro').NodeValue := prPessoa.Endereco.Bairro;
+  XMLEnvio.DocumentElement.ChildNodes['Endereco'].AddChild('Cidade').NodeValue := prPessoa.Endereco.Cidade;
+  XMLEnvio.DocumentElement.ChildNodes['Endereco'].AddChild('Estado').NodeValue := prPessoa.Endereco.Estado;
+  XMLEnvio.DocumentElement.ChildNodes['Endereco'].AddChild('Pais').NodeValue := prPessoa.Endereco.Pais;
+  XMLEnvio.SaveToFile(ExtractFileDir(Application.ExeName) + '\Pessoa.xml');
+
+end;
+end.

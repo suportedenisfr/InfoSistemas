@@ -1,0 +1,22 @@
+unit UnPessoa;
+
+interface
+  type
+    TPessoa = class
+    private
+      FNome : string[50];
+      FIdentidade : string[10];
+      FCPF : string[14];
+      FTelefone : string[14];
+      FEmail : string[50];
+    public
+      property Nome : string[50] read FNome write FNome;
+      property Identidade : string[10] read FIdentidade write FIdentidade;
+      property CPF : string[14] read FCPF write FCPF;
+      property Telefone : string[14] read FTelefone write FTelefone;
+      property Email : string[50] read FEmail write FEmail;
+    end;
+
+implementation
+
+end.

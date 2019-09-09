@@ -1,0 +1,43 @@
+unit UnXML;
+
+
+Interface
+
+uses
+  System.Classes,
+  System.TypInfo, Xml.XMLDoc, System.Generics.Collections, UnEndereco, UnPessoa;
+
+  type
+    TMeuXML = class
+    public
+      procedure WriteToXML(prPessoa : TPessoa);
+  end;
+
+implementation
+
+uses
+  System.SysUtils, Vcl.Forms;
+
+
+procedure TMeuXML.WriteToXML(prPessoa : TPessoa);
+var
+  XMLEnvio: TXMLDocument;
+begin
+  XMLEnvio := TXMLDocument.Create(nil);
+  XMLEnvio.Active := True;
+  XMLEnvio.AddChild('Pessoa').AddChild('Nome').NodeValue := prPessoa.Nome;
+  XMLEnvio.AddChild('Pessoa').AddChild('Identidade').NodeValue := prPessoa.Identidade;
+  XMLEnvio.AddChild('Pessoa').AddChild('CPF').NodeValue := prPessoa.CPF;
+  XMLEnvio.AddChild('Pessoa').AddChild('Telefone').NodeValue := prPessoa.Telefone;
+  XMLEnvio.AddChild('Pessoa').AddChild('Email').NodeValue := prPessoa.Email;
+
+  XMLEnvio.DocumentElement.AddChild('Endereco');
+  XMLEnvio.DocumentElement.ChildNodes['Endereco'].AddChild('Nome').NodeValue := prPessoa.Nome;
+  XMLEnvio.DocumentElement.ChildNodes['Endereco'].AddChild('Identidade').NodeValue := prPessoa.Identidade;
+  XMLEnvio.DocumentElement.ChildNodes['Endreco'].AddChild('CPF').NodeValue := prPessoa.CPF;
+  XMLEnvio.DocumentElement.ChildNodes['Endereco'].AddChild('Telefone').NodeValue := prPessoa.Telefone;
+  XMLEnvio.DocumentElement.ChildNodes['Endereco'].AddChild('Email').NodeValue := prPessoa.Email;
+  XMLEnvio.SaveToFile(ExtractFileDir(Application.ExeName) + '\Pessoa.xml');
+
+end;
+end.
